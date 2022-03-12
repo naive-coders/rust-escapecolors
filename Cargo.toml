@@ -1,0 +1,21 @@
+[package]
+name = "escapecolor"
+version = "0.9.0"
+authors = ["Pierre-Jean Baraud <pierre-jean@baraud.fr>"]
+description = "Escape Ansi colours (Select Graphic Rendition) from strings"
+homepage = "https://github.com/naive-coders/rust-escapecolor"
+repository = "https://github.com/naive-coders/rust-escapecolor"
+readme = "README.md"
+keywords = ["colors","ansi","escape", "sgr", "csi"]
+license = "MIT"
+edition = "2021"
+
+[lib]
+name = "escapecolor"
+path = "src/lib.rs"
+
+[[bin]]
+name = "escapecolor"
+path = "src/main.rs"
+
+[dependencies]
