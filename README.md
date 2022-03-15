@@ -1,13 +1,13 @@
-# escapecolor
+# escapecolors
 
-`escapecolor` is a rust crate that provides both a binary and a lib to escape colors from a string following [ANSI SGR specifications][1].
+`escapecolors` is a rust crate that provides both a binary and a lib to escape colors from a string following [ANSI SGR specifications][1].
 
 ## Usage
 
 ### As a binary:
 
 ```
-echo -e '\E[31mhello\E[7;32min\E[0;4;44mcolors\E[0m' | escapecolor
+echo -e '\E[31mhello\E[7;32min\E[0;4;44mcolors\E[0m' | escapecolors
 ```
 
 ### As a lib:
@@ -16,9 +16,9 @@ echo -e '\E[31mhello\E[7;32min\E[0;4;44mcolors\E[0m' | escapecolor
 use ansi_string::AnsiString;
 
 fn main() {
-   let bytes_with_color = vec![27,91,51,52,109,72,101,108,108,111,27,91,48,109];
-   let string_with_color = String::from_utf8(bytes_with_color).unwrap();
-   let ansi_string = AnsiString::new(string_with_color);
+   let bytes_with_colors = vec![27,91,51,52,109,72,101,108,108,111,27,91,48,109];
+   let string_with_colors = String::from_utf8(bytes_with_color).unwrap();
+   let ansi_string = AnsiString::new(string_with_colors);
    println!("Without colors: {}", ansi_string.without_colors);
    println!("With colors: {}", ansi_string.original);
 }

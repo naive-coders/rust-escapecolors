@@ -1,5 +1,5 @@
 [package]
-name = "escapecolor"
+name = "escapecolors"
   version = "0.9.1"
 authors = ["Pierre-Jean Baraud <pierre-jean@baraud.fr>"]
 description = "Escape Ansi colours (Select Graphic Rendition) from strings"
@@ -11,11 +11,11 @@ license = "MIT"
 edition = "2021"
 
 [lib]
-name = "escapecolor"
+name = "escapecolors"
 path = "src/lib.rs"
 
 [[bin]]
-name = "escapecolor"
+name = "escapecolors"
 path = "src/main.rs"
 
 [dependencies]
