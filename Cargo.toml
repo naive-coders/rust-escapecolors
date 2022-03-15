@@ -1,6 +1,6 @@
 [package]
 name = "escapecolor"
-version = "0.9.0"
+  version = "0.9.1"
 authors = ["Pierre-Jean Baraud <pierre-jean@baraud.fr>"]
 description = "Escape Ansi colours (Select Graphic Rendition) from strings"
 homepage = "https://github.com/naive-coders/rust-escapecolors"
